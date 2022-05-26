@@ -13,21 +13,36 @@
     <form action="/tacos">
         <p>
             <label for="username">Enter your username</label>
-            <input type="text" placeholder="username" id="username">
+            <input type="text" placeholder="username" id="username" name="username">
         </p>
         <p>
             <label for="password">Enter your password</label>
-            <input type="password" placeholder="password" id="password">
+            <input type="password" placeholder="password" id="password" name="password">
         </p>
         <p>
             <label for="color">Choose between colors</label>
-            <input type="color" id="color">
+            <input type="color" id="color" name="color">
         </p>
         <p>
             <label for="number">Enter a number</label>
-            <input type="number" placeholder="number" id="number">
+            <input type="number" placeholder="number" id="number" name="num">
         </p>
+        <button type="submit" name="">Submit</button>
     </form>
+    <h2>SEARCH</h2>
+    <h3>Google Search</h3>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button type="submit">Google search</button>
+    </form>
+    <h3>Youtube Search</h3>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <button type="submit">Youtube Search</button>
+    </form>
+
 </body>
 
 </html>
+<!-- Each input element must be contained "name" attribute
+    action and name attribute-->
