@@ -25,7 +25,7 @@
         </p>
         <p>
             <label for="number">Enter a number</label>
-            <input type="number" placeholder="number" id="number" name="num">
+            <input type="number" placeholder="number" id="number" name="num" min="0" max="100" step="2">
         </p>
         <button type="submit" name="">Submit</button>
     </form>
@@ -61,6 +61,27 @@
                 <option value="salad">Salad</option>
             </select>
         </p>
+
+        <p><label for="cheese_level">Amount of Cheese:</label>
+            <input type="range" name="cheese_level" id="cheese_level" value="9" min="1" max="10" step="2">
+        </p>
+
+        <p><label for="request">Send request</label>
+            <br>
+            <textarea name="request" id="request" cols="35" rows="10"
+                placeholder="Type your requests here..."></textarea>
+        </p>
+
+        <button type="submit">Submit</button>
+    </form>
+    <h2>Validations Demo</h2>
+    <form action="/dummy">
+        <label for="first">Enter First Name</label>
+        <input type="first" name="first" id="first" required minlength="3" maxlength="20">
+        <p>
+            <label for="url">Type url:</label>
+            <input type="url" name="url" id="url" placeholder="URL" required>
+        </p>
         <button type="submit">Submit</button>
     </form>
 
@@ -70,5 +91,7 @@
 <!-- Each input element must be contained "name" attribute
     action and name attribute
     file:///C:/tacos?agree_tos=on&size=medium
-    select element and option element * value and selected attributes(like ul and li)
-    -->
+    select element and option element * value and selected attributes(like ul and li).
+    input type=range  min max step (slide bar).
+    textarea element for like essays, long texts * cols,rows,placeholder
+    pattern attributes for constraning the inputs-->
